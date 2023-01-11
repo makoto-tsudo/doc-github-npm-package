@@ -1,5 +1,4 @@
-# github-npm-package
-NPMプライベートリポジトリとしてgithubを利用する方法
+# githubでNPMリポジトリ作成
 
 ## 概要
 プライベート共通モジュールをNPMを利用してインストールするため、
