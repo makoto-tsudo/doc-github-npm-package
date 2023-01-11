@@ -1,0 +1,27 @@
+{
+  "name": "@makoto-tsudo/mqttclient-ndemactrl",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "@makoto-tsudo:registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.8",
+    "log4js": "^6.7.1",
+    "mqtt": "^4.3.7"
+  },
+  "devDependencies": {
+    "@types/config": "^3.3.0",
+    "@types/node": "^18.11.18",
+    "typescript": "^4.9.4"
+  }
+}
