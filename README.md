@@ -18,12 +18,14 @@ PublishはgithubのActionsを利用して自動化する。
 
 - [package.json](samples/package.json)へ下記項目を記載
   - *name*  
-  [scope]/[モジュール名]
+  [scope]/[モジュール名]  
+  *scope* は @ + `githubユーザ名` or `organization`  
+  例：@cfmlabo
   - *version*
   - *publishConfig*  
   [scope]:registry: "https://npm.pkg.github.com"
 - Actionsを利用して自動的にPublishする  
-  [workflows/publish-to-private.yaml](samples/publish-to-private.yaml)
+  [workflows/publish-to-private.yaml](samples/publish-to-private.yaml)  
 
 ## 共通モジュールの利用
 
@@ -31,10 +33,10 @@ PublishはgithubのActionsを利用して自動化する。
   Settings -> Developer Settings -> Personal Access Tokens -> Tokens(classic) -> Generate New Token  
   read: packagesにチェックを入れて作成する。
 
-- 認証トークンの再作成
+- 認証トークンの再作成  
   有効期限が切れている場合はRegenerateで再作成する。
 
-- リポジトリの設定とトークンの指定
+- リポジトリの設定とトークンの指定  
   [.npmrc](samples/.npmrc)をプロジェクトトップディレクトリへ配置する。
 
 - インストール  
