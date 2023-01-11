@@ -17,9 +17,11 @@ PublishはgithubのActionsを利用して自動化する。
 ## 共通モジュールの準備
 
 - [package.json](samples/package.json)へ下記項目を記載
-  - *name* [scope]/[モジュール名]
+  - *name*  
+  [scope]/[モジュール名]
   - *version*
-  - *publishConfig* [scope]:registry: "https://npm.pkg.github.com"
+  - *publishConfig*  
+  [scope]:registry: "https://npm.pkg.github.com"
 - Actionsを利用して自動的にPublishする  
   [workflows/publish-to-private.yaml](samples/publish-to-private.yaml)
 
